@@ -4,7 +4,7 @@ function NavBar({ isDarkMode, toggleTheme }) {
   return (
     <nav className={`navbar navbar-expand-lg ${isDarkMode ? 'navbar-dark bg-primary' : 'navbar-dark bg-primary'}`}>
       <div className="container-fluid">
-        <Link className="navbar-brand d-flex align-items-center" to="/" style={{ fontSize: '1.5rem' }}>
+        <Link className="navbar-brand d-flex align-items-center" to="/" style={{ fontSize: '2rem' }}>
           <img
             src="https://shorturl.at/lepSy" 
             alt="Logo"
@@ -31,22 +31,22 @@ function NavBar({ isDarkMode, toggleTheme }) {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/about" style={{ fontSize: '1.2rem' }}>
+              <Link className="nav-link" to="/about" style={{ fontSize: '1.7rem' }}>
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/portfolio" style={{ fontSize: '1.2rem' }}>
+              <Link className="nav-link" to="/portfolio" style={{ fontSize: '1.7rem' }}>
                 Portfolio
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact-me" style={{ fontSize: '1.2rem' }}>
+              <Link className="nav-link" to="/contact-me" style={{ fontSize: '1.7rem' }}>
                 Contact Me
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/resume" style={{ fontSize: '1.2rem' }}>
+              <Link className="nav-link" to="/resume" style={{ fontSize: '1.7rem' }}>
                 Resume
               </Link>
             </li>
