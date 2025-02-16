@@ -4,8 +4,7 @@ function NavBar({ isDarkMode, toggleTheme }) {
   return (
     <nav className={`navbar navbar-expand-lg ${isDarkMode ? 'navbar-dark bg-primary' : 'navbar-dark bg-primary'}`}>
       <div className="container-fluid">
-
-        <Link className="navbar-brand d-flex align-items-center" to="/">
+        <Link className="navbar-brand d-flex align-items-center" to="/" style={{ fontSize: '1.5rem' }}>
           <img
             src="https://shorturl.at/lepSy" 
             alt="Logo"
@@ -32,22 +31,22 @@ function NavBar({ isDarkMode, toggleTheme }) {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/about" style={{ fontSize: '1.2rem' }}>
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/portfolio">
+              <Link className="nav-link" to="/portfolio" style={{ fontSize: '1.2rem' }}>
                 Portfolio
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact-me">
+              <Link className="nav-link" to="/contact-me" style={{ fontSize: '1.2rem' }}>
                 Contact Me
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/resume">
+              <Link className="nav-link" to="/resume" style={{ fontSize: '1.2rem' }}>
                 Resume
               </Link>
             </li>
