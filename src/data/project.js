@@ -32,7 +32,7 @@ export const projects = [
     {
         title: "Weather Dashboard",
         image: "https://shorturl.at/Fpu45",
-        renderLink: "https://shoc71.github.io/Weather-Dashboard/",
+        renderLink: "https://weather-dashboard-ymxb.onrender.com/",
         githubLink: "https://github.com/shoc71/Weather-Dashboard",
     },
     {
