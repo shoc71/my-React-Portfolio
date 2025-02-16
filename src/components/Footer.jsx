@@ -1,41 +1,89 @@
+import { useState } from 'react';
+
 function Footer() {
+  const [hoveredIcon, setHoveredIcon] = useState(null);
+
+  const handleMouseEnter = (icon) => setHoveredIcon(icon);
+  const handleMouseLeave = () => setHoveredIcon(null);
+
+  const iconStyles = (icon, color) => ({
+    fontSize: '1.5rem',
+    color: hoveredIcon === icon ? color : 'white',
+    textShadow: hoveredIcon === icon ? `0px 0px 10px ${color}` : 'none',
+    transition: '0.3s ease-in-out',
+    marginRight: '10px',
+  });
+
   return (
     <footer className="bg-dark text-light pt-5 pb-3">
       <div className="container-fluid p-3">
-        {/* Flex container with space between */}
         <div className="d-flex justify-content-between align-items-center flex-wrap">
           {/* Brand & Description */}
-          <div className="mb-3">
-            <h5>YourBrand</h5>
+          <div className="mb-4 d-flex align-items-center">
+            <img
+              src="https://shorturl.at/lepSy" 
+              alt="" 
+              style={{ width: '25px', height: 'auto' }}
+            />
+            <h4>Mystery Orbs</h4>
           </div>
 
-          {/* Social Media */}
           <div className="mb-3">
             <h5>Follow Me</h5>
             <div className="d-flex">
-              <a href="https://facebook.com" className="text-light me-2">
-                <i className="bi bi-facebook"></i>
+              <a href="https://facebook.com" target='_blank'>
+                <i
+                  className="bi bi-facebook"
+                  style={iconStyles('facebook', '#1877f2')}
+                  onMouseEnter={() => handleMouseEnter('facebook')}
+                  onMouseLeave={handleMouseLeave}
+                ></i>
               </a>
-              <a href="https://twitter.com" className="text-light me-2">
-                <i className="bi bi-twitter"></i>
+              <a href="https://twitter.com" target='_blank'>
+                <i
+                  className="bi bi-twitter-x"
+                  style={iconStyles('twitter', '#1da1f2')}
+                  onMouseEnter={() => handleMouseEnter('twitter')}
+                  onMouseLeave={handleMouseLeave}
+                ></i>
               </a>
-              <a href="https://instagram.com" className="text-light me-2">
-                <i className="bi bi-instagram"></i>
+              <a href="https://instagram.com" target='_blank'>
+                <i
+                  className="bi bi-instagram"
+                  style={iconStyles('instagram', '#e1306c')}
+                  onMouseEnter={() => handleMouseEnter('instagram')}
+                  onMouseLeave={handleMouseLeave}
+                ></i>
               </a>
-              <a href="https://linkedin.com" className="text-light me-2">
-                <i className="bi bi-linkedin"></i>
+              <a href="https://linkedin.com" target='_blank'>
+                <i
+                  className="bi bi-linkedin"
+                  style={iconStyles('linkedin', '#0077b5')}
+                  onMouseEnter={() => handleMouseEnter('linkedin')}
+                  onMouseLeave={handleMouseLeave}
+                ></i>
               </a>
-              <a href="https://github.com" className="text-light me-2">
-                <i className="bi bi-github"></i>
+              <a href="https://github.com/shoc71" target='_blank'>
+                <i
+                  className="bi bi-github"
+                  style={iconStyles('github', '#b3b3b3')}
+                  onMouseEnter={() => handleMouseEnter('github')}
+                  onMouseLeave={handleMouseLeave}
+                ></i>
               </a>
-              <a href="https://stack-overflow.com" className="text-light">
-                <i className="bi bi-stack-overflow"></i>
+              <a href="https://stackoverflow.com" target='_blank'>
+                <i
+                  className="bi bi-stack-overflow"
+                  style={iconStyles('stackoverflow', '#f48024')}
+                  onMouseEnter={() => handleMouseEnter('stackoverflow')}
+                  onMouseLeave={handleMouseLeave}
+                ></i>
               </a>
             </div>
           </div>
         </div>
 
-        <div className="text-center">
+        <div>
           <small>
             &copy; {new Date().getFullYear()} Mystery Orbs. All rights reserved.
           </small>

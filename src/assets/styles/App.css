@@ -1,0 +1,28 @@
+
+
+body {
+    transition: background-color 4s ease, color 4s ease;
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.btn {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.navbar {
+    transition: background-color 0.5s ease;
+}
+
+.navbar .nav-link {
+    transition: color 0.5s ease;
+}
+
+.navbar-toggler-icon {
+    transition: background-color 0.5s ease;
+}

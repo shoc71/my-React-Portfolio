@@ -1,43 +1,17 @@
-// imports
 import { Link } from 'react-router-dom';
 
 const ErrorPage = () => {
-
-    return (
-        <div style={styles.container}>
-            <h1 style={styles.title}>404</h1>
-            <p style={styles.message}>Oops! The page you're looking for doesn't exist.</p>
-            <Link to="/" style={styles.link}>Go back to Home</Link>
-        </div>
-    );
-};
-
-const styles = {
-    container: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '100vh',
-        textAlign: 'center',
-        backgroundColor: '#FFF8DC',
-        color: '#2E8B57',
-        padding: '1em',
-    },
-    title: {
-        fontSize: '4rem',
-        margin: '0.5em 0',
-    },
-    message: {
-        fontSize: '1.2rem',
-        margin: '0.5em 0 1.5em',
-    },
-    link: {
-        textDecoration: 'none',
-        color: '008B8B',
-        fontWeight: 'bold',
-        fontSize: '1.2rem',
-    },
+  return (
+    <div className="d-flex flex-column justify-content-center align-items-center vh-100 bg-light text-dark">
+      <h1 className="display-1 fw-bold">404</h1>
+      <p className="lead mb-4">
+        Oops! The page you're looking for doesn't exist.
+      </p>
+      <Link to="/" className="btn btn-info btn-lg">
+        Go back to Home
+      </Link>
+    </div>
+  );
 };
 
 export default ErrorPage;
