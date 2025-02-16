@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function NavBar({ isDarkMode, toggleTheme }) {
   return (
     <nav className={`navbar navbar-expand-lg ${isDarkMode ? 'navbar-dark bg-primary' : 'navbar-dark bg-primary'}`}>
-      <div className="container">
+      <div className="container-fluid">
 
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <img
