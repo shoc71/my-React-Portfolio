@@ -1,5 +1,11 @@
 export const projects = [
     {
+        title: "Job Hunter",
+        image: "https://shorturl.at/szKRs",
+        renderLink: "https://job-hunter-n1p6.onrender.com",
+        githubLink: "https://job-hunter-n1p6.onrender.com",
+    },
+    {
         title: "Profile Maker",
         image: "https://ozdemirburak.com/assets/img/og/fake-name-generator.png",
         renderLink: "https://github.com/shoc71/profile-maker",
