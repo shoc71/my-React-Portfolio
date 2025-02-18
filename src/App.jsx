@@ -16,13 +16,18 @@ import ResumePage from "./pages/resumePage";
 import AboutMePage from "./pages/aboutMePage.jsx"
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    return localStorage.getItem("darkMode") === "true";
+  });
 
   const toggleTheme = () => {
-    setIsDarkMode(prevMode => !prevMode);
+    setIsDarkMode(prevMode => {
+      const newMode = !prevMode;
+      localStorage.setItem("darkMode", newMode); // Save to localStorage
+      return newMode;
+    });
   };
 
-  // Add or remove 'dark-mode' class on body for smooth transition
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add("dark-mode");
