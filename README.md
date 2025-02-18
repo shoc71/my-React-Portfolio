@@ -1,6 +1,8 @@
 # My React Portfolio Page
 written by shoc71
 
+![image](https://github.com/user-attachments/assets/c869fb9b-2124-4025-b80c-f47735277523)
+
 ## Description
 A Portfolio Page made using React front-end with Bootstrap and a couple of other npm packages as well. It can be used a template for other developers and amatuers website builder(s) but specifically it is made with the sole purpose of displaying all my projects that I proudly would like to display.
 
