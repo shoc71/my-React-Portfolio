@@ -7,7 +7,7 @@ export const projects = [
     },
     {
         title: "Job Hunter",
-        image: "https://shorturl.at/szKRs",
+        image: "https://shorturl.at/nY5J8",
         renderLink: "https://job-hunter-n1p6.onrender.com",
         githubLink: "https://github.com/shoc71/Job-Hunter",
     },
