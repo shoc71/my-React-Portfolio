@@ -25,7 +25,7 @@ export const projects = [
     },
     {
         title: "Recipe Saver",
-        image: "https://shorturl.at/3d5o8",
+        image: "https://shorturl.at/kbzR6",
         renderLink: "https://project4.com",
         githubLink: "https://github.com/shoc71/Recipe-Saver",
     },
