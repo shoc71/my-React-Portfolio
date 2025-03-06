@@ -1,9 +1,15 @@
 export const projects = [
     {
+        title: "Kanban Render",
+        image: "https://shorturl.at/CvavY",
+        renderLink: "https://kanban-render.onrender.com/",
+        githubLink: "https://github.com/shoc71/Kanban-Render/",
+    },
+    {
         title: "Job Hunter",
         image: "https://shorturl.at/szKRs",
         renderLink: "https://job-hunter-n1p6.onrender.com",
-        githubLink: "https://job-hunter-n1p6.onrender.com",
+        githubLink: "https://github.com/shoc71/Job-Hunter",
     },
     {
         title: "Profile Maker",
