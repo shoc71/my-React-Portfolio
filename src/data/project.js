@@ -37,7 +37,7 @@ export const projects = [
     },
     {
         title: "Keep On Going",
-        image: "https://shorturl.at/Dq5En",
+        image: "https://shorturl.at/u9tn4",
         renderLink: "https://github.com/shoc71/Keep-On-Going",
         githubLink: "https://github.com/shoc71/Keep-On-Going",
     },
