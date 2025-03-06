@@ -39,5 +39,6 @@ This project is licensed under the [![License](https://opensource.org/licenses/A
 For any questions or concerns, please email mrdrlogic@gmail.com. Or [GitHub Profile](https://github.com/shoc71)
 
 ## Links
-Deployed Link: https://my-react-portfolio-1.onrender.com/
-Github Repo: https://github.com/shoc71/my-React-Portfolio
+Deployed Link: [https://my-react-portfolio-1.onrender.com/](https://my-react-portfolio-1.onrender.com/)
+
+Github Repo: [https://github.com/shoc71/my-React-Portfolio/](#)
