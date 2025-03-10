@@ -1,5 +1,11 @@
 export const projects = [
     {
+        title: "Product Store",
+        image: "https://shorturl.at/qEiJZ",
+        renderLink: "https://product-store-4h1p.onrender.com/",
+        githubLink: "https://github.com/shoc71/product-store",
+    },
+    {
         title: "Kanban Render",
         image: "https://shorturl.at/CvavY",
         renderLink: "https://kanban-render.onrender.com/",
