@@ -1,5 +1,11 @@
 export const projects = [
     {
+        title: "Book Search & Save",
+        image: "https://shorturl.at/6cF7u",
+        renderLink: "https://book-search-n-save-tpxl.onrender.com/",
+        githubLink: "https://github.com/shoc71/Book-Search-n-Save",
+    },
+    {
         title: "Product Store",
         image: "https://shorturl.at/qEiJZ",
         renderLink: "https://product-store-4h1p.onrender.com/",
