@@ -1,13 +1,14 @@
 // import React from 'react';
-import { Carousel } from 'react-bootstrap';
-import { projects } from '../data/project';
+import { Carousel } from "react-bootstrap";
+import { projects } from "../data/project";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   const liveProjects = projects.filter((project) => !project.isComingSoon);
 
   return (
-    <div className="container py-5">
-        <header className="text-center mb-5">
+    <div className="container py-5 min-vh-100">
+      <header className="text-center mb-5">
         <h1>Hello World</h1>
         <h3>Welcome to My Personal Website</h3>
         <p className="lead">
@@ -18,12 +19,16 @@ function HomePage() {
       <Carousel>
         {liveProjects.map((project, index) => (
           <Carousel.Item key={index}>
-            <a href={project.renderLink} target="_blank" rel="noopener noreferrer">
+            <a
+              href={project.renderLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 className="d-block w-100"
                 src={project.image}
                 alt={project.title}
-                style={{ objectFit: 'cover', height: '400px' }}
+                style={{ objectFit: "cover", height: "400px" }}
               />
               <Carousel.Caption>
                 <div className="carousel-title-box">
@@ -35,12 +40,33 @@ function HomePage() {
         ))}
       </Carousel>
 
-      <section className="mt-5">
+      <section className="mt-5 text-center">
         <h2>About My Work</h2>
         <p>
-          I am passionate about developing innovative solutions and creative projects. My portfolio
-          showcases a range of work—from dynamic web applications to engaging user experiences. Click on any project above to learn more.
+          I am passionate about developing innovative solutions and creative
+          projects. My portfolio showcases a range of work—from dynamic web
+          applications to engaging user experiences. Click on any project above
+          to learn more.
         </p>
+
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+
+        <div className="mb-5">
+          <p className="lead">
+            List of Projects are available at the click of the button.
+          </p>
+          <Link
+            className="btn btn-lg btn-primary"
+            to="/portfolio"
+            style={{ fontSize: "2.3rem" }}
+          >
+            Click Me!
+          </Link>
+        </div>
       </section>
 
       <style>

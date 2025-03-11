@@ -1,8 +1,10 @@
 const ResumePage = () => {
   return (
-    <div className="container py-5">
+    <div className="container py-5 min-vh-1000">
       <header className="mb-5 text-center">
-        <h3 className="display-5"><b>Resume</b></h3>
+        <h3 className="display-5">
+          <b>Resume</b>
+        </h3>
         <p className="lead">Download my resume below</p>
         <a
           href="/path-to-resume.pdf" // Replace with actual file path
@@ -22,11 +24,18 @@ const ResumePage = () => {
             <ul>
               <li>HTML5</li>
               <li>CSS</li>
-              <li>JavaScript (ES6+) <sub>(wait...)</sub> </li>
-              <li>Typescript <sub>(hold on...)</sub> </li>
+              <li>
+                JavaScript (ES6+) <sub>(wait...)</sub>
+              </li>
+              <li>
+                Typescript <sub>(hold on...)</sub>
+              </li>
               <li>Bootstrap</li>
               <li>Chakra UI</li>
               <li>React</li>
+              <li>
+                Apollo <sub>(as an API to the apollo-server)</sub>
+              </li>
             </ul>
           </div>
 
@@ -38,6 +47,7 @@ const ResumePage = () => {
               <li>Express.js</li>
               <li>Databases: MySQL, PostgreSQL, MongoDB</li>
               <li>Sequelize, Mongoose (ORM/ODM)</li>
+              <li>GraphQL</li>
               <li>Docker</li>
               <li>Python (pygame, pandas, numpy)</li>
               <li>git</li>

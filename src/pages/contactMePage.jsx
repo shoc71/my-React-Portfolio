@@ -1,20 +1,20 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const ContactMePage = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [responseMessage, setResponseMessage] = useState('');
+  const [responseMessage, setResponseMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
   };
 
@@ -23,33 +23,39 @@ const ContactMePage = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://formspree.io/f/mjkgajnj', {
-        method: 'POST',
+      const response = await fetch("https://formspree.io/f/mjkgajnj", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        setResponseMessage('Your message has been sent!');
+        setResponseMessage("Your message has been sent!");
       } else {
-        setResponseMessage('Failed to send the message.');
+        setResponseMessage("Failed to send the message.");
       }
     } catch (error) {
-      setResponseMessage('An Error occurred:', error);
+      setResponseMessage("An Error occurred:", error);
     } finally {
       setIsSubmitting(false);
     }
   };
 
   return (
-    <div className="container py-5">
+    <div className="container py-5 min-vh-100">
       <h2 className="text-center mb-4">Contact Me</h2>
 
-      <form onSubmit={handleSubmit} className="mx-auto" style={{ maxWidth: '600px' }}>
+      <form
+        onSubmit={handleSubmit}
+        className="mx-auto"
+        style={{ maxWidth: "600px" }}
+      >
         <div className="mb-3">
-          <label htmlFor="name" className="form-label">Your Name</label>
+          <label htmlFor="name" className="form-label">
+            Your Name
+          </label>
           <input
             type="text"
             className="form-control"
@@ -62,7 +68,9 @@ const ContactMePage = () => {
         </div>
 
         <div className="mb-3">
-          <label htmlFor="email" className="form-label">Your Email</label>
+          <label htmlFor="email" className="form-label">
+            Your Email
+          </label>
           <input
             type="email"
             className="form-control"
@@ -75,7 +83,9 @@ const ContactMePage = () => {
         </div>
 
         <div className="mb-3">
-          <label htmlFor="message" className="form-label">Message</label>
+          <label htmlFor="message" className="form-label">
+            Message
+          </label>
           <textarea
             className="form-control"
             id="message"
@@ -87,12 +97,26 @@ const ContactMePage = () => {
           ></textarea>
         </div>
 
-        {responseMessage && <div className="alert alert-info">{responseMessage}</div>}
+        {responseMessage && (
+          <div className="alert alert-info">{responseMessage}</div>
+        )}
 
-        <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
-          {isSubmitting ? 'Sending...' : 'Send Message'}
+        <button
+          type="submit"
+          className="btn btn-primary"
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? "Sending..." : "Send Message"}
         </button>
       </form>
+
+      <div className="container text-center">
+        <br />
+        <br />
+        <br />
+        <p>Thanks for leaving a message! I'll get back to you shortly.</p>
+        <br />
+      </div>
     </div>
   );
 };
