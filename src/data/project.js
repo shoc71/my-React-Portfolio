@@ -18,6 +18,12 @@ export const projects = [
         githubLink: "https://github.com/shoc71/product-store",
     },
     {
+        title: "API Byte Sync",
+        image: "https://shorturl.at/HGFLr",
+        renderLink: "https://github.com/shoc71/API_Byte-Sync",
+        githubLink: "https://github.com/shoc71/API_Byte-Sync",
+    },
+    {
         title: "Kanban Render",
         image: "https://shorturl.at/CvavY",
         renderLink: "https://kanban-render.onrender.com/",
